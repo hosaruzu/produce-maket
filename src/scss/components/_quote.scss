@@ -1,0 +1,47 @@
+.quote {
+  padding-bottom: 190px;
+
+  @include small-tablet {
+    padding-bottom: 60px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--grey-color);
+    margin-bottom: 50px;
+  }
+
+  &__content {
+    margin: 0;
+    margin-bottom: 30px;
+    max-width: 820px;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 150%;
+    color: var(--dark-color);
+    margin-bottom: 30px;
+
+    @include small-tablet {
+      font-size: 22px;
+    }
+  }
+
+  &__author {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--dark-color);
+
+    span {
+      color: var(--grey-color);
+    }
+  }
+}

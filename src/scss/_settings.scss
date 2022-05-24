@@ -105,3 +105,22 @@ a {
 .page--ios .dis-scroll {
   position: relative;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+
+  @include small-tablet {
+    grid-template-columns: auto;
+    gap: 0;
+    row-gap: 30px;
+  }
+}
+
+.section-padding {
+  padding: 190px 0;
+  @include small-tablet {
+    padding: 60px 0;
+  }
+}

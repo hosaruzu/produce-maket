@@ -1,0 +1,87 @@
+.hero {
+  padding-top: calc(120px + 150px);
+  background-image: url("../img/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include small-tablet {
+    padding-top: 200px;
+  }
+
+  &__title {
+    margin: 0;
+    max-width: 936px;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 116px;
+    color: var(--light-color);
+    margin-bottom: 30px;
+
+    @include small-tablet {
+      font-size: 54px;
+      line-height: 70px;
+    }
+
+    @include mobile {
+      font-size: 42px;
+      line-height: 60px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--light-color);
+    max-width: 468px;
+    margin-bottom: 50px;
+  }
+
+  &__btn {
+    margin-bottom: 211px;
+
+    @include small-tablet {
+      margin-bottom: 90px;
+    }
+  }
+}
+
+.btn {
+  padding: 20px 54px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  transition: 0.3s all;
+
+  &--light {
+    color: var(--dark-color);
+    background-color: var(--light-color);
+
+    &:hover {
+      color: var(--light-color);
+      background-color: var(--dark-color);
+    }
+
+    &:active {
+      color: var(--dark-color);
+      background-color: var(--light-color);
+    }
+  }
+
+  &--dark {
+    color: var(--light-color);
+    background-color: var(--dark-color);
+
+    &:hover {
+      color: var(--dark-color);
+      background-color: var(--light-color);
+    }
+
+    &:active {
+      color: var(--light-color);
+      background-color: var(--dark-color);
+    }
+  }
+}

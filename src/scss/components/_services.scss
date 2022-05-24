@@ -1,0 +1,35 @@
+.services {
+  img {
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+
+  .services-item {
+    padding: 40px 0;
+    border-top: 1px solid rgba(29, 29, 31, 0.4);
+
+    @include mobile {
+      padding: 20px 0;
+    }
+    &__title {
+      margin: 0;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 130%;
+      color: var(--dark-color);
+
+      @include mobile {
+        font-size: 22px;
+      }
+    }
+
+    &__descr {
+      margin: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: var(--grey-color);
+    }
+  }
+}
